@@ -44,9 +44,10 @@ describe Dessert do
       galatobouriko.eat(2)
       expect(galatobouriko.quantity).to eq(18)
     end
-
+		# expect() means testst return value 
+		# expect{} includes a begin/rescue loop, wont check return value
     it "raises an error if the amount is greater than the quantity" do
-      expect { galatobouriko.eat(400000)}.to raise_error("there's not enough!")
+      expect{galatobouriko.eat(400000) }.to raise_error("there's not enough!")
     end
   end
 
