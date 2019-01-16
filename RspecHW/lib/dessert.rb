@@ -30,7 +30,7 @@ class Dessert
   end
 
   def serve
-    "#{@chef.titleize} has made #{@quantity} #{@type.pluralize}!"
+    "#{@chef.titleize} has made #{@quantity} trays of #{@type}!"
   end
 
   def make_more

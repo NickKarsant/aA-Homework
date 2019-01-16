@@ -6,7 +6,7 @@ class Chef
   end
 
   def titleize
-    "Chef #{@name} the Great Baker"
+    "Chef #{@name} the Greek"
   end
 
   def bake(dessert)
